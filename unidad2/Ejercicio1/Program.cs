@@ -1,4 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿// Hacer un programa para solicitar dos números y luego calcule y emita la suma en pantalla.
 
 
 //declaro variables

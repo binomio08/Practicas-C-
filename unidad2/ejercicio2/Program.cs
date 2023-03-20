@@ -1,4 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿// Hacer un programa para solicitar por teclado un número y luego devolver su valor elevado al cubo.
 
 
 //Delcaro variables 

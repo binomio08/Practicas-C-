@@ -1,6 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 // Hacer un programa para ingresar por teclado las tres notas de exámenes de un alumno
-//calcule y emita por pantalla el promedio final.
+//  calcule y emita por pantalla el promedio final.
 
 // Declaramos Variables
 
