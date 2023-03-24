@@ -7,4 +7,8 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ejemplo
+<<<<<<< HEAD:unidad5/ejemploFor/obj/Debug/net6.0/ejemplo.GeneratedMSBuildEditorConfig.editorconfig
 build_property.ProjectDir = c:\Users\leand\Desktop\Curso C# Nivel 1\unidad5\ejemploFor\
+=======
+build_property.ProjectDir = /Users/leandrotroncoso/Documents/C#1/Practicas-C-/unidad5/ejemplo/
+>>>>>>> 5c87480a0b593a161d9e90b00079b9d4c8bcb59f:unidad5/ejemplo/obj/Debug/net6.0/ejemplo.GeneratedMSBuildEditorConfig.editorconfig
