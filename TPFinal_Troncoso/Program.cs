@@ -4,9 +4,6 @@
 //c. El menor de los números primos.
 //Nota: evaluar el uso de una función que analice si un número dado es primo o no y que devuelva true o false según corresponda.
 
-using System.ComponentModel.DataAnnotations;
-using System.Reflection.Metadata;
-
 internal class Program
 {
     private static void Main(string[] args)
@@ -27,39 +24,39 @@ internal class Program
 
             // Verifico si el numero ingresado es par o impar. En caso de que el nro ingresado sea par de verifica cual es el mayor.
             // por otra lado si el número es impar se cuenta.
-            if(nro % 2 == 0)
+            if (nro % 2 == 0)
             {
-                if(banPar == false)
+                if (banPar == false)
                 {
                     max = nro;
                     banPar = true;
                 }
-                else if(nro > max)
+                else if (nro > max)
                     max = nro;
             }
             else
-                contImpar ++;
+                contImpar++;
 
-            if(primos(nro)){
+            if (primos(nro))
+            {
                 minPri = nro;
-                if(nro < minPri)
+                if (nro < minPri)
                     minPri = nro;
             }
         }
 
-        Console.WriteLine("El mayor de los nros pares es: " + max + ". La cantidad de nros impares es: " + contImpar+ ". El min de los nros primos es: " + minPri);
+        Console.WriteLine("El mayor de los nros pares es: " + max + ". La cantidad de nros impares es: " + contImpar + ". El min de los nros primos es: " + minPri);
 
-    }
-
-    // Declaro una función llamada primos que evalua si el número ingrasado es primo(devuelve un true) o no(devuelve un false) 
-    static bool primos(int a)
-    {
-        int cont = 0;
-        for (int i = 1; i <= a; i++)
+        // Declaro una función llamada primos que evalua si el número ingrasado es primo(devuelve un true) o no(devuelve un false) 
+        bool primos(int a)
         {
-        if (a % i == 0) cont++;
+            int cont = 0;
+            for (int i = 1; i <= a; i++)
+            {
+                if (a % i == 0) cont++;
+            }
+            if (cont == 2) return true;
+            else return false;
         }
-        if (cont == 2) return true;
-        else return false;
     }
 }
