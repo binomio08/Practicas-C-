@@ -12,7 +12,7 @@ internal class Program
     private static void Main(string[] args)
     {
         //Declaro variables globales 
-        int nro, max = 0, contImpar = 0; bool banPar = false;
+        int nro, max = 0, contImpar = 0, minPri = 0; bool banPar = false;
 
         //Solicito datos
         Console.WriteLine("Ingrese un nro...");
@@ -38,12 +38,16 @@ internal class Program
                     max = nro;
             }
             else
-            {
                 contImpar ++;
+
+            if(primos(nro)){
+                minPri = nro;
+                if(nro < minPri)
+                    minPri = nro;
             }
         }
 
-        Console.WriteLine();
+        Console.WriteLine("El mayor de los nros pares es: " + max + ". La cantidad de nros impares es: " + contImpar+ ". El min de los nros primos es: " + minPri);
 
     }
 
