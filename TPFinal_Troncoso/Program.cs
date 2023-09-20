@@ -4,12 +4,15 @@
 //c. El menor de los números primos.
 //Nota: evaluar el uso de una función que analice si un número dado es primo o no y que devuelva true o false según corresponda.
 
+using System.ComponentModel.DataAnnotations;
+using System.Reflection.Metadata;
+
 internal class Program
 {
     private static void Main(string[] args)
     {
         //Declaro variables globales 
-        int nro;
+        int nro, max = 0, contImpar = 0; bool banPar = false;
 
         //Solicito datos
         Console.WriteLine("Ingrese un nro...");
@@ -21,6 +24,23 @@ internal class Program
             // vuelvo a solicitar datos dentro del bucle while
             Console.WriteLine("Ingrese otro nro...");
             nro = int.Parse(Console.ReadLine() ?? "0");
+
+            // Verifico si el numero ingresado es par o impar. En caso de que el nro ingresado sea par de verifica cual es el mayor.
+            // por otra lado si el número es impar se cuenta.
+            if(nro % 2 == 0)
+            {
+                if(banPar == false)
+                {
+                    max = nro;
+                    banPar = true;
+                }
+                else if(nro > max)
+                    max = nro;
+            }
+            else
+            {
+                contImpar ++;
+            }
         }
 
         Console.WriteLine();

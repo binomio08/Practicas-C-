@@ -2,19 +2,26 @@
 
 // Declaramos variables
 
-int edad, promedio, suma = 0 , cont = 0;
-
-// Solicitamos datos
-
-for (int i = 0; i < 20; i++)
+internal class Program
 {
-    Console.WriteLine("Ingrese Edad");
-    edad = int.Parse(Console.ReadLine()??"0");
+    private static void Main(string[] args)
+    {
+        int edad, promedio, suma = 0, cont = 0;
 
-    if(edad > 18){
-        cont++;
-        suma += edad;
+        // Solicitamos datos
+
+        for (int i = 0; i < 20; i++)
+        {
+            Console.WriteLine("Ingrese Edad");
+            edad = int.Parse(Console.ReadLine() ?? "0");
+
+            if (edad > 18)
+            {
+                cont++;
+                suma += edad;
+            }
+        }
+        promedio = suma / cont;
+        Console.WriteLine("El promedio de mayores a 18 es: " + promedio);
     }
 }
-promedio = suma / cont; 
-Console.WriteLine("El promedio de mayores a 18 es: " + promedio);

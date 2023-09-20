@@ -1,0 +1,4 @@
+C:\Users\leand\Desktop\Curso C# Nivel 1\TPFinal_Troncoso\obj\Debug\net6.0\TPFinal_Troncoso.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leand\Desktop\Curso C# Nivel 1\TPFinal_Troncoso\obj\Debug\net6.0\TPFinal_Troncoso.AssemblyInfoInputs.cache
+C:\Users\leand\Desktop\Curso C# Nivel 1\TPFinal_Troncoso\obj\Debug\net6.0\TPFinal_Troncoso.AssemblyInfo.cs
+C:\Users\leand\Desktop\Curso C# Nivel 1\TPFinal_Troncoso\obj\Debug\net6.0\TPFinal_Troncoso.csproj.CoreCompileInputs.cache
